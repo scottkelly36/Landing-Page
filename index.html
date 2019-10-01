@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!---insert link for ikons--->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/889f0829fa.js"></script>
+  <!---bootstrap css only--->
+  <meta charset="utf-8">
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="author">
+  <title>landing page</title>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-dark bg-dark">
+      
+        <ul class="top_nav container-fluid nav nav-pills nav-justified nav-fill">
+          <li class="nav-item"><a href="#home" class="nav-link"><img class="navlogo" src="images/logo.png" alt="logo"></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      
+
+      <div class="dropdown_bars">
+        <a class="openbtn" href="" id="openBtn" onclick="openBtn()"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <div class="dropdown_nav" id="dropDownNavbar">
+        <span>
+          <a class="closebtn" href="#" id="closeBtn" onclick="closeBtn()"><i class="fas fa-times"></i></a>
+        </span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#video">Video</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <div class="main container-fluid align-items-center">
+    <div class="main-textcontainer col">
+      <h1>Landing</h1>
+      <p>Even the all-powerful Pointing has no control about the<br> blind texts it is an almost unorthographic life One day however a small line</p>
+    </div>
+  </div>
+
+  <div class=" about-section container-fluid">
+    <div class="row">
+
+      <div class="about">
+        <h2 id="about">About</h2>
+        <p>Landing is a design app to use on large and small projects.</p>
+      </div>
+
+      <div class="about col-sm">
+        <h3>User experience</h3>
+        <img class="img-fluid" src="images/userexperience.png" alt="user exp">
+        <p>At Landing we have put the user at the front imprlementing regular updates to make the app as user friendly as possible</p>
+      </div>
+
+      <div class="about col-sm">
+        <h3>Virtual Design</h3>
+        <img class="img-fluid" src="images/virtualdesign.png" alt="virtual design">
+        <p>use the app to see your projects in a virtual aspect</p>
+      </div>
+
+      <div class="about col-sm">
+        <h3>Design & Research</h3>
+        <img class="img-fluid" src="images/designresearch.png" alt="">
+        <p>We've worked with industy experts to design the app in the best way possible</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="features container-fluid">
+    <h2 id="features">Features</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Mobile</th>
+          <th>Computer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tablerow">
+          <th>Video Tutorials</th>
+          <td><i class="fas fa-times"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr class="tablerow">
+          <th scope="row">3D models</th>
+          <td><i class="fas fa-times"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr class="tablerow">
+          <th scope="row">Design plans</th>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr class="tablerow">
+          <th scope="row">Expert help</th>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="video container-fluid">
+    <h2 id="video">Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P1Jwj-AW1Z0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br><br><br>
+  </div>
+
+
+  <div class="pricing container-fluid">
+    <h2 id="pricing">Pricing</h2><br><br><br>
+    <div class="row">
+
+      <div class="basic col-sm rounded">
+
+        <img src="images/basic-package.png" alt="basic">
+        <p>our basic range just covers our mobile app with no online support however we still offer all the features</p>
+        <button type="button" name="basic" class="btn btn-secondary">Buy Now!</button>
+      </div>
+
+      <div class="pro col-sm rounded">
+
+        <img src="images/pro-package.png" alt="pro">
+        <p>our pro version covers both mobile and computer apps with this you also get live support to wel navigate the features of the app.</p>
+        <button type="button" name="pro" class="btn btn-secondary">Buy Now!</button>
+      </div>
+
+      <div class="ultimate col-sm rounded">
+
+        <img src="images/ultimate-package.png" alt="ultimate">
+        <p>the ultimate version is what it says the ultimate version of the app with unlimited support</p>
+        <button type="button" name="ultimate" class="btn btn-secondary">Buy Now!</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+<footer>
+  <div class="container-fluid contact">
+    <div class="row">
+
+
+      <div class="contact1 col-sm">
+        <h3>Address</h3>
+        <p>97  Benson Park Drive,<br>
+          LESLIE,<br>
+          GA,<br>
+          Georgia,<br>
+          31764
+      </p>
+      </div>
+
+      <div class="contact2 col-sm">
+        <h3>Information</h3>
+        <ul>
+          <li>about</li>
+          <li>privacy</li>
+          <li>terms and conditions</li>
+        </ul>
+      </div>
+
+      <div class="contact3 col-sm">
+        <h3>contact info</h3>
+        <p>Tel: 01632 960590</p>
+        <p>mobile: 0789646765</P>
+        <img src="" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+<script>
+  function openBtn(){
+    document.getElementById('dropDownNavbar').style.display ='block';
+    document.getElementById('openBtn').style.display= 'none';
+  }
+
+  function closeBtn(){
+    document.getElementById('dropDownNavbar').style.display ='none';
+    documnet.getElementById('openBtn').style.display='block';
+  }
+</script>
+</html>

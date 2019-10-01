@@ -1,0 +1,209 @@
+
+
+body,html{
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  color: white;
+}
+/*navbar*/
+
+.navlogo{
+  height:75px;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width:100%;
+  background-color: rgb(52, 58, 64);
+  overflow: hidden;
+  height:75px;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin:0px;
+  height:100%;
+  width:100%;
+}
+
+.nav a:hover {
+  background-color: #111;
+  color: white;
+ 
+}
+.dropdown_bars{
+  display:none;
+  text-decoration: none;
+
+}
+.dropdown_nav{
+  display:none;
+}
+/*responsive nav*/
+@media(max-width:568px){
+  .dropdown_bars{
+    display:block;
+  }
+  .top_nav{
+    display:none;
+}
+@media(min-width:568px){
+ 
+  }
+}
+
+
+ /*navbar*/
+.main{
+  height: 800px;
+  text-align: center;
+  justify-content: center;
+  background-color: #767585;
+  margin:0px;
+  padding:0px;
+
+}
+
+.main-textcontainer{
+  justify-content: center;
+  text-align: center;
+  height:100%;
+  width:100%;
+  padding-top: 200px;
+  background-image: url(images/openingimage.jpg);
+  color:white;
+  margin:0px;
+}
+
+.hometext{
+  color: white;
+  background-color: #6c747c;
+  text-align: center;
+  width:400px;
+}
+.about-section{
+  background-color:rgb(52, 58, 64);
+  padding-bottom:50px;
+
+}
+.about{
+  text-align: center;
+  background: rgb(52, 58, 64);
+  color: white;
+  width:100%;
+  padding-top:50px;
+  padding-bottom:20px;
+  margin:25px
+}
+
+.features{
+  background-image: url(images/features_background.jpg);
+  position: sticky;
+  text-align: center;
+  height:auto;
+  color: white;
+  margin:0px;
+  padding:75px;
+}
+.table{
+  width:200px;
+  height: 300px;
+}
+.tablerow{
+  width: 50px;
+}
+.fa-times{
+   color:red;
+   font-size: 2em;
+}
+.fa-check{
+  color:green;
+  font-size: 2em;
+}
+
+.video{
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(52, 58, 64);
+  height:600px;
+
+}
+.pricing{
+  height: 750px;
+  text-align: center;
+  background-image: url(images/art-background-blue-370799.png);
+  height: auto;
+}
+
+.basic{
+  text-align: center;
+  background-color: lightgrey;
+  margin: 50px;
+
+}
+.pro{
+
+  text-align: center;
+  background-color: lightgrey;
+  margin: 50px;
+}
+
+.ultimate{
+  text-align: center;
+  background-color: lightgrey;
+  margin: 50px;
+
+}
+.contact{
+  background-color: rgb(52, 58, 64);
+  color:white;
+  text-align: center;
+
+
+}
+.contact1{
+
+
+}
+.contact2{
+
+
+
+}
+.contact3{
+
+
+}
+table{
+  width: 100%;
+  border: solid white 1px;
+  height: 500px;
+  padding: 50px 0px 50px 0px;
+}
+td{
+  border: solid white 1px;
+}
+th{
+  background-color: grey;
+}
+ul{
+  list-style: none;
+}
+.openbtn{
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+.closebtn{
+  text-decoration:none;
+  color:white;
+}
+
