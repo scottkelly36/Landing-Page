@@ -8,60 +8,94 @@ h2{
   color: white;
 }
 /*navbar*/
-
-.navlogo{
-  height:75px;
-}
-
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  width:100%;
+.navbar_top{
   background-color: rgb(52, 58, 64);
+  height:60px;
+  align-content: center;
+  z-index: 1;
   overflow: hidden;
-  height:75px;
 }
-
-.nav a {
-  display: block;
-  color: white;
+.navbar_top a{
+  color:white;
+  font-size: 1em;
+  padding: 25px 40px;
   text-align: center;
+  padding: auto;
+  margin:auto;
+}
+.navbar_top a:hover{
+  background-color: #6c747c;
+  color:rgb(52, 58, 64);
   text-decoration: none;
-  margin:0px;
-  height:100%;
-  width:100%;
 }
 
-.nav a:hover {
-  background-color: #111;
-  color: white;
- 
-}
-.dropdown_bars{
-  display:none;
-  text-decoration: none;
+/*Navbar mobile*/
 
+.navbar_mobile a:hover{
+  text-decoration: none;
 }
-.dropdown_nav{
-  display:none;
-}
-/*responsive nav*/
-@media(max-width:568px){
-  .dropdown_bars{
-    display:block;
+
+@media(min-width:600px){
+.navbar_top{
+  display:block;
   }
-  .top_nav{
-    display:none;
+
+.navbar_mobile{
+  display:none;
 }
-@media(min-width:568px){
- 
+
+.bars{
+  display:none;
+  
+  }
+}
+@media(max-width:600px){
+  .navbar_top{
+    display:none;
+  }
+
+  .bars{
+    display:block;
+    font-size:2em;
+    position: fixed;
+    padding:40px 0px 0px 40px;
+    color:white;
+    z-index:1;
+  }
+
+  .navbar_mobile{
+    color:white;
+    background-color:rgba(52, 58, 64, 0.6);
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 0px;
+    font-size:1em;
+    text-decoration: none;
+    display:none;
+  }
+  .navbar_mobile a{
+    padding:auto;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    font-size: 2em;
+    align-items: center;
+    padding:20px 0px 20px 20px;
   }
 }
 
 
  /*navbar*/
+ .spacing{
+   padding: 50px 0px;
+ }
+
 .main{
   height: 800px;
   text-align: center;
@@ -79,6 +113,7 @@ h2{
   width:100%;
   padding-top: 200px;
   background-image: url(images/openingimage.jpg);
+  position:fixed;
   color:white;
   margin:0px;
 }
@@ -108,10 +143,11 @@ h2{
   background-image: url(images/features_background.jpg);
   position: sticky;
   text-align: center;
-  height:auto;
+  height: 700px;
   color: white;
-  margin:0px;
-  padding:75px;
+  padding-top:50px;
+  padding-bottom:20px;
+  
 }
 .table{
   width:200px;
@@ -133,7 +169,7 @@ h2{
   text-align: center;
   justify-content: center;
   background-color: rgb(52, 58, 64);
-  height:600px;
+  height:100vh;
 
 }
 .pricing{
@@ -166,44 +202,32 @@ h2{
   background-color: rgb(52, 58, 64);
   color:white;
   text-align: center;
-
+}
+.contact a{
+  color:white;
+  text-decoration: none;
 
 }
-.contact1{
-
-
-}
-.contact2{
-
-
+.contact a:hover{
+  text-decoration: none;
 
 }
-.contact3{
 
-
-}
 table{
-  width: 100%;
-  border: solid white 1px;
+  width:250px;
   height: 500px;
   padding: 50px 0px 50px 0px;
 }
 td{
-  border: solid white 1px;
+  width:75px;
+  
 }
 th{
-  background-color: grey;
+  width:75px;
+  background-color: rgba(52, 58, 64, 0.4);
+  color:white;
 }
 ul{
   list-style: none;
-}
-.openbtn{
-  font-size: 2em;
-  text-decoration: none;
-  color: white;
-}
-.closebtn{
-  text-decoration:none;
-  color:white;
 }
 

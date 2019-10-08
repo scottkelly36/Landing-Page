@@ -16,38 +16,39 @@
 </head>
 
 <body>
+<nav>
+  <div class="navbar_top" id="Navbar_Top">
 
-  <div>
-    <nav class="navbar navbar-dark bg-dark">
-      
-        <ul class="top_nav container-fluid nav nav-pills nav-justified nav-fill">
-          <li class="nav-item"><a href="#home" class="nav-link"><img class="navlogo" src="images/logo.png" alt="logo"></a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
-          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      
-
-      <div class="dropdown_bars">
-        <a class="openbtn" href="" id="openBtn" onclick="openBtn()"><i class="fas fa-bars"></i></a>
-      </div>
-
-      <div class="dropdown_nav" id="dropDownNavbar">
-        <span>
-          <a class="closebtn" href="#" id="closeBtn" onclick="closeBtn()"><i class="fas fa-times"></i></a>
-        </span>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#video">Video</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#video">Video</a>
+    <a href="#pricing">Pricing</a>
 
   </div>
+
+  <div>
+    <a class="bars" href="javascript:void(0)" id="Bars" onclick="openBtn()"><i class="fas fa-bars"></i></a>
+  </div>
+
+  <div class="navbar_mobile" id="Navbar_Mobile">
+
+    <span>
+      <a class="closebtn" href="javascript:void(0)" id="navBarClose" onclick="closeBtn()"><i class="fas fa-times-circle"></i></a>
+    </span>
+
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#video">Video</a>
+    <a href="#pricing">Pricing</a>
+
+  </div>
+
+</nav>
+    
+
+  
 
 
   <div class="main container-fluid align-items-center">
@@ -66,28 +67,28 @@
       </div>
 
       <div class="about col-sm">
-        <h3>User experience</h3>
+        <h3 class="spacing">User experience</h3>
         <img class="img-fluid" src="images/userexperience.png" alt="user exp">
-        <p>At Landing we have put the user at the front imprlementing regular updates to make the app as user friendly as possible</p>
+        <p class="spacing">At Landing we have put the user at the front imprlementing regular updates to make the app as user friendly as possible</p>
       </div>
 
       <div class="about col-sm">
-        <h3>Virtual Design</h3>
+        <h3 class="spacing">Virtual Design</h3>
         <img class="img-fluid" src="images/virtualdesign.png" alt="virtual design">
-        <p>use the app to see your projects in a virtual aspect</p>
+        <p class="spacing">use the app to see your projects in a virtual aspect</p>
       </div>
 
       <div class="about col-sm">
-        <h3>Design & Research</h3>
+        <h3 class="spacing">Design & Research</h3>
         <img class="img-fluid" src="images/designresearch.png" alt="">
-        <p>We've worked with industy experts to design the app in the best way possible</p>
+        <p class="spacing">We've worked with industy experts to design the app in the best way possible</p>
       </div>
     </div>
   </div>
 
   <div class="features container-fluid">
-    <h2 id="features">Features</h2>
-    <table class="table">
+    <h2 id="features" class="spacing">Features</h2>
+    <table class="table spacing">
       <thead>
         <tr>
           <th>Feature</th>
@@ -122,35 +123,35 @@
   </div>
 
   <div class="video container-fluid">
-    <h2 id="video">Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/P1Jwj-AW1Z0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br><br><br><br>
+    <h2 id="video" class="spacing">Video</h2>
+    <iframe class="spacing" width="80%" height="80%" src="https://www.youtube.com/embed/P1Jwj-AW1Z0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
   </div>
 
 
   <div class="pricing container-fluid">
-    <h2 id="pricing">Pricing</h2><br><br><br>
+    <h2 id="pricing" class="spacing">Pricing</h2>
     <div class="row">
 
-      <div class="basic col-sm rounded">
+      <div class="basic col-sm rounded spacing">
 
         <img src="images/basic-package.png" alt="basic">
-        <p>our basic range just covers our mobile app with no online support however we still offer all the features</p>
-        <button type="button" name="basic" class="btn btn-secondary">Buy Now!</button>
+        <p class="spacing">our basic range just covers our mobile app with no online support however we still offer all the features</p>
+        <button type="button" name="basic" class="btn btn-secondary spacing">Buy Now!</button>
       </div>
 
-      <div class="pro col-sm rounded">
+      <div class="pro col-sm rounded spacing">
 
         <img src="images/pro-package.png" alt="pro">
-        <p>our pro version covers both mobile and computer apps with this you also get live support to wel navigate the features of the app.</p>
-        <button type="button" name="pro" class="btn btn-secondary">Buy Now!</button>
+        <p class="spacing">our pro version covers both mobile and computer apps with this you also get live support to wel navigate the features of the app.</p>
+        <button type="button" name="pro" class="btn btn-secondary spacing">Buy Now!</button>
       </div>
 
-      <div class="ultimate col-sm rounded">
+      <div class="ultimate col-sm rounded spacing">
 
         <img src="images/ultimate-package.png" alt="ultimate">
-        <p>the ultimate version is what it says the ultimate version of the app with unlimited support</p>
-        <button type="button" name="ultimate" class="btn btn-secondary">Buy Now!</button>
+        <p class="spacing">the ultimate version is what it says the ultimate version of the app with unlimited support</p>
+        <button type="button" name="ultimate" class="btn btn-secondary spacing">Buy Now!</button>
       </div>
     </div>
 
@@ -166,8 +167,8 @@
     <div class="row">
 
 
-      <div class="contact1 col-sm">
-        <h3>Address</h3>
+      <div class="contact col-sm">
+        <h3 class="spacing">Address</h3>
         <p>97  Benson Park Drive,<br>
           LESLIE,<br>
           GA,<br>
@@ -176,17 +177,15 @@
       </p>
       </div>
 
-      <div class="contact2 col-sm">
-        <h3>Information</h3>
-        <ul>
-          <li>about</li>
-          <li>privacy</li>
-          <li>terms and conditions</li>
-        </ul>
+      <div class="contact col-sm">
+        <h3 class="spacing">Information</h3>
+        <a href="#">About</a><br>
+        <a href="#">Privacy</a><br>
+        <a href="#">Terms and conditions</a><br>
       </div>
 
-      <div class="contact3 col-sm">
-        <h3>contact info</h3>
+      <div class="contact col-sm">
+        <h3 class="spacing">contact info</h3>
         <p>Tel: 01632 960590</p>
         <p>mobile: 0789646765</P>
         <img src="" alt="">
@@ -196,15 +195,16 @@
   </div>
 
 </footer>
+
 <script>
   function openBtn(){
-    document.getElementById('dropDownNavbar').style.display ='block';
-    document.getElementById('openBtn').style.display= 'none';
+    document.getElementById('Navbar_Mobile').style.display ='block';
+    document.getElementById('Bars').style.display= 'none';
   }
 
   function closeBtn(){
-    document.getElementById('dropDownNavbar').style.display ='none';
-    documnet.getElementById('openBtn').style.display='block';
+    document.getElementById('Navbar_Mobile').style.display ='none';
+    documnet.getElementById('Bars').style.display='block';
   }
 </script>
 </html>
